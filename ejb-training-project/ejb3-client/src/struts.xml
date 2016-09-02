@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE struts PUBLIC '-//Apache Software Foundation//DTD Commons Validator Rules Configuration 2.3//EN' 'http://struts.apache.org/dtds/struts-2.3.dtd'>
+
+<struts>
+    
+      <package name="default" extends="struts-default">
+
+        <action name="login" class="se.cambio.ics.action.UserLogInAction">
+
+			<result name="employee">/employee1.jsp</result>
+			<result name="generalManager">/generalManager1.jsp</result>
+			<result name="adminUser">/adminUser1.jsp</result>
+            <result name="success">/success.jsp</result>
+            <result name="error">/login.jsp</result>
+
+        </action>
+        
+        <action name="viewrecords" class="se.cambio.ics.action.AssetsViewAction">  
+        <result name="success">/viewAssets.jsp</result>
+
+        </action>
+        
+        <action name="updatePrice" class="se.cambio.ics.action.PriceUpdateItemAction">  
+        <result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+
+        </action>
+        
+        <action name="totalAmountQty" class="se.cambio.ics.action.TotalAssetsAmountAction">  
+        <result name="success">/totalAssetsAmountQty.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+
+        </action>
+        
+        <action name="totalAmount" class="se.cambio.ics.action.TotalAmountAction">  
+        <result name="success">/totalAmount.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+
+        </action>
+        
+        <action name="searchItem" class="se.cambio.ics.action.SearchItemAction">  
+        <result name="success">/searchItem.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+
+        </action>
+        
+        <action name="updateRemark" class="se.cambio.ics.action.RemarkUpdateItemAction">  
+        <result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getItemId" class="se.cambio.ics.action.ItemIdListAction">  
+		<result name="success">/enterId.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getItemIdForPrice" class="se.cambio.ics.action.ItemIdListAction">  
+		<result name="success">/editPrice.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getItemIdForRemark" class="se.cambio.ics.action.ItemIdListAction">  
+		<result name="success">/editRemark.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getItemIdForDelete" class="se.cambio.ics.action.ItemIdListAction">  
+		<result name="success">/deleteItem.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="allAssets" class="se.cambio.ics.action.ViewAllAssetsAction">  
+		<result name="success">/viewTotalAssets.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="addUser" class="se.cambio.ics.action.AddUserAction">  
+		<result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getName" class="se.cambio.ics.action.UserNameListAction">  
+		<result name="success">/userNameList.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="getNameForDeleteUser" class="se.cambio.ics.action.UserNameListAction">  
+		<result name="success">/deleteUser.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="deleteUser" class="se.cambio.ics.action.DeleteUserAction">  
+		<result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="searchUser" class="se.cambio.ics.action.SearchUserAction">  
+		<result name="success">/searchUser.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="updateUser" class="se.cambio.ics.action.UpdateUserAction">  
+		<result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="missingItemsFromUser" class="se.cambio.ics.action.MissingItemsAction">  
+		<result name="success">/missingItemsByUsers.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="vendorRateType" class="se.cambio.ics.action.VendorRateTypeAction">  
+		<result name="success">/vendor.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="deleteVendorRateType" class="se.cambio.ics.action.DeleteVendorRateTypeAction">  
+		<result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="addAssignItem" class="se.cambio.ics.action.AddAssignItemAction">  
+		<result name="success">/success.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="vendorRateType3" class="se.cambio.ics.action.VendorRateTypeAction">  
+		<result name="success">/vendor3.jsp</result>
+        <result name="error">/error.jsp</result>
+        
+        </action>
+        
+        <action name="rateTypeList" class="se.cambio.ics.action.VendorRateTypePM" method="getRateTypeList">  
+		
+        </action>
+        
+        <!-- Add your actions here -->
+
+    </package>
+    
+    <package name="example1" extends="json-default">
+            
+            <action name="dataTablesAction" class="se.cambio.ics.action.SearchVendorAction">
+                    <result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+            </action>
+            
+            <action name="dataSearchAction" class="se.cambio.ics.action.SearchVendorAction">
+                    <result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+            </action>
+            
+            <action name="vendorRateDataAction" class="se.cambio.ics.action.SearchVendorRatesAction">
+                    <result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+            </action>
+            
+            <action name="getVendorAction" class="se.cambio.ics.action.VendorAction">
+                    <result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+            </action>
+            
+            <action name="getVendorRateAction" class="se.cambio.ics.action.VendorRateAction">
+                    <result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+            </action>
+            
+            
+            <action name="addVendor" class="se.cambio.ics.action.AddVendorAction">  
+					<result name="success" type="json">
+                        <param name="excludeNullProperties">true</param>
+                        <param name="noCache">true</param>
+                    </result>
+                    <result name="error" type="json"></result>
+   
+        	</action>
+        
+        <action name="addVendorRateType" class="se.cambio.ics.action.AddVendorRateAction">  
+			<result name="success" type="json">
+                <param name="excludeNullProperties">true</param>
+                <param name="noCache">true</param>
+            </result>
+        	<result name="error" type="json"></result>
+        </action>
+        
+        <action name="addItem" class="se.cambio.ics.action.AddItemAction">  
+        	<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+			<result name="error" type="json"></result>
+        </action>
+        
+        <action name="searchItemsList" class="se.cambio.ics.action.SearchItemsListAction">  
+		<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        
+        </action>
+        
+         <action name="updateVendor" class="se.cambio.ics.action.UpdateVendorAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        	<result name="error" type="json"></result>
+        </action>
+        
+         <action name="deleteVendor" class="se.cambio.ics.action.DeleteVendorAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        <result name="error" type="json"></result>
+        </action>
+        
+        <action name="statusdataAction" class="se.cambio.ics.action.StatusListAction">
+                <result name="success" type="json">
+                    
+                </result>
+        </action>
+        
+        <action name="categorydataAction" class="se.cambio.ics.action.CategoryListAction">
+                <result name="success" type="json">
+                    
+                </result>
+        </action>
+        
+        <action name="updateItem" class="se.cambio.ics.action.UpdateItemAction">  
+        	<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        </action>
+        
+         <action name="deleteItem" class="se.cambio.ics.action.DeleteItemAction">  
+        	<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        </action>
+        
+         <action name="item" class="se.cambio.ics.action.ItemAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        </action>
+        
+        <action name="departmentdataAction" class="se.cambio.ics.action.DepartmentListAction">
+                <result name="success" type="json">
+                    
+                </result>
+        </action>
+        
+        <action name="invoicedataAction" class="se.cambio.ics.action.InvoiceListAction">
+                <result name="success" type="json">
+                    
+                </result>
+        </action>
+        
+        <action name="rateTypeDataAction" class="se.cambio.ics.action.RateTypeAction">
+                <result name="success" type="json">    
+                </result>
+        </action>
+        
+        <action name="rateLevelDataAction" class="se.cambio.ics.action.RateLevelAction">
+                <result name="success" type="json">    
+                </result>
+        </action>
+        
+        <action name="assignItemData" class="se.cambio.ics.action.AssignItemAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        </action>
+        
+        <action name="assignItemDetails" class="se.cambio.ics.action.AssignItemDetailsAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        </action>
+        
+        <action name="assignedItemStatusAction" class="se.cambio.ics.action.AssignItemStatusAction">
+                <result name="success" type="json">
+                    
+                </result>
+        </action>
+        
+     
+         <action name="floorList" class="se.cambio.ics.action.LocationFloorListAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        
+        </action>
+        
+         <action name="locationNameList" class="se.cambio.ics.action.LocationNameListAction">  
+			<result name="success" type="json">
+                 <param name="excludeNullProperties">true</param>
+                 <param name="noCache">true</param>
+             </result>
+        
+        </action>
+        
+        <action name="updateVendorRateType" class="se.cambio.ics.action.UpdateVendorRateTypeAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+        
+        </action>
+        
+        <action name="getCategoryListAction" class="se.cambio.ics.action.SearchCategoryAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+        
+        </action>
+        
+        <action name="addCategory" class="se.cambio.ics.action.AddCategoryAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+        	<result name="error" type="json"></result>
+        </action>
+        
+        <action name="updateCategory" class="se.cambio.ics.action.UpdateCategoryAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+        	<result name="error" type="json"></result>
+        </action>
+        
+        <action name="deleteCategory" class="se.cambio.ics.action.DeleteCategoryAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+	        <result name="error" type="json"></result>
+        </action>
+        
+        <action name="category" class="se.cambio.ics.action.CategoryAction">  
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+	                 <param name="noCache">true</param>
+	        </result>
+        </action>
+        
+        </package>
+    
+</struts>
