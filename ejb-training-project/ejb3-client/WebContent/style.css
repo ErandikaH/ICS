@@ -1,0 +1,102 @@
+/* below line is used for online google font */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+h2{
+	text-align: center;
+	font-size: 30px;
+}
+
+hr{
+	margin-bottom: 30px;
+}
+
+div.container{
+	width: 960px;
+	margin-top: 80px;
+	margin:50px auto;
+	float:center;
+	font-family: 'Droid Serif', serif;
+	position:relative;
+	
+	
+}
+
+
+div.buttonPanel{
+	width: 120px;
+	margin-top: 30px;
+	margin:50px auto;
+	float:center;
+	font-family: 'Droid Serif', serif;
+	
+	position:relative;
+	
+}
+div.panel{
+	
+	border: 2px solid #a1a1a1;
+	border-radius: 25px;
+	width: 500px;
+	height: 250px;
+	margin-top: 80px;
+	margin:50px auto;
+	float:center;
+	font-family: 'Droid Serif', serif;
+	border: 15px solid white;
+	box-shadow: 0 0 10px;
+	position:relative;
+	
+}
+
+div.fieldPanel{
+	
+	
+	width: 280px;
+	margin-top: 80px;
+	margin:50px auto;
+	float:center;
+	font-family: 'Droid Serif', serif;
+	
+	position:relative;
+	
+}
+
+input[type=text],[type=password] {
+	width: 90%;
+	height: 21px;
+	padding-left: 5px;
+	margin-bottom: 20px;
+	margin-top: 8px;
+	box-shadow: 0 0 5px #464646;
+	border: 2px #464646;
+	border-radius: 10px;
+	color: #4f4f4f;
+	font-size: 12px;
+}
+
+label{
+	color: #464646;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#submit {
+	width: 100%;
+	background: linear-gradient(#22abe9 5%, #36caf0 100%);
+	border: 1px solid #0F799E;
+	border-radius: 15px;
+	font-size: 20px;
+	margin-top: 15px;
+	padding: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	color: black;
+	text-shadow: 0px 1px 0px #13506D;
+}
+
+#submit:hover{
+    background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+
+
